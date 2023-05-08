@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         // Get the User object
         User myUser = new User();
         // getting Name and description
-        myUser.followed = false;
+        myUser.followed = true;
         myUser.isFollowed();
         TextView tv2 = findViewById(R.id.textView2);
         tv2.setText("Hello World!");
@@ -28,11 +28,11 @@ public class MainActivity extends AppCompatActivity {
         tv.setText("Lorem ipsum dolor sit amet. Et quas recusandae id quae deserunt ea placeat beatae quo velit quam est quidem soluta et rerum voluptas ut alias fuga! Ab pariatur ipsum hic libero rerum qui doloribus nobis qui quam sint non culpa inventore et voluptas sequi.");
         ToggleButton togBtn2 = findViewById(R.id.toggleButton2);
 
-        if (myUser.followed)
+        if (myUser.followed)  // if user is followed show unfollowed
         {
             togBtn2.setText("Unfollow");
         }
-        else {
+        else { // if user is unfollowed then show follow
             togBtn2.setText("Follow");
             togBtn2.setOnClickListener(new View.OnClickListener() {
                 @Override
