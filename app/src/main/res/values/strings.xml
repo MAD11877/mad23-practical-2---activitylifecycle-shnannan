@@ -2,6 +2,9 @@
     <string name="app_name">Week2Project</string>
     <string name="TextView2">Hello World!</string>
     <string name="TextView">Plain Text</string>
-    <string name="togBtn2">Follow</string>
-    <string name="togBtn3">Message</string>
+    <string name="togBtn2off">Follow</string>
+    <string name="togBtn2on">Unfollow</string>
+    <string name="togBtn3off">Message</string>
+    <string name="togBtn3on">Message</string>
+
 </resources>

@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         // Get the User object
         User myUser = new User();
         // getting Name and description
-        myUser.followed = true;
+        myUser.followed = false; // not followed!
         myUser.isFollowed();
         TextView tv2 = findViewById(R.id.textView2);
         tv2.setText("Hello World!");
@@ -30,15 +30,22 @@ public class MainActivity extends AppCompatActivity {
 
         if (myUser.followed)  // if user is followed show unfollowed
         {
-            togBtn2.setText("Unfollow");
-        }
-        else { // if user is unfollowed then show follow
-            togBtn2.setText("Follow");
+            togBtn2.getTextOn(); // unfollowed (already following)
             togBtn2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Log.v(title,"Toggle Button: Follow clicked!");
-                    togBtn2.setText("Unfollow");
+                    togBtn2.getTextOff(); //follow (not following)
+                    Log.v(title,"Toggle Button: Follow clicked! Now Unfollowed..");
+                }
+            });
+        }
+        else { // if user is unfollowed then show follow
+            togBtn2.getTextOff();  //follow (not following)
+            togBtn2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    togBtn2.getTextOn();
+                    Log.v(title,"Toggle Button: Follow clicked!Now Following");
                 }
             });
         }

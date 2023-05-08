@@ -40,10 +40,9 @@
         android:layout_marginStart="52dp"
         android:layout_marginTop="16dp"
         android:background="#673AB7"
-        android:text="@string/togBtn2"
         android:textColor="@color/white"
-        android:textOff="Follow"
-        android:textOn="Unfollow"
+        android:textOff="@string/togBtn2off"
+        android:textOn="@string/togBtn2on"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -54,10 +53,9 @@
         android:layout_marginStart="128dp"
         android:layout_marginTop="16dp"
         android:background="#673AB7"
-        android:text="@string/togBtn3"
         android:textColor="@color/white"
-        android:textOff="Message"
-        android:textOn="Messaged!"
+        android:textOff="@string/togBtn3off"
+        android:textOn="@string/togBtn3on"
         app:layout_constraintStart_toEndOf="@+id/toggleButton2"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
