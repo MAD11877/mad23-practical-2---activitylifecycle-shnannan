@@ -51,12 +51,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         ToggleButton togBtn3 = findViewById(R.id.toggleButton3);
-        togBtn3.setText("Message");
+        togBtn3.getTextOff();
         togBtn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.v(title,"Toggle Button: Message clicked!");
-                togBtn3.setText("Messaged!");
+                togBtn3.getTextOn();
             }
         });
     }

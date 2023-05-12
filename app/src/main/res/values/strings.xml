@@ -6,6 +6,6 @@
     <string name="togBtn2off">Follow</string>
     <string name="togBtn2on">Unfollow</string>
     <string name="togBtn3off">Message</string>
-    <string name="togBtn3on">Message</string>
+    <string name="togBtn3on">Messaged!</string>
 
 </resources>
