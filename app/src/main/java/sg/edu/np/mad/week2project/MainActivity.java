@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         myUser.isFollowed();
         TextView tv2 = findViewById(R.id.textView2);
         tv2.setText("Hello World!");
-        TextView tv = findViewById(R.id.textView);
+        TextView tv = findViewById(R.id.txtDesc);
         tv.setText("Lorem ipsum dolor sit amet. Et quas recusandae id quae deserunt ea placeat beatae quo velit quam est quidem soluta et rerum voluptas ut alias fuga! Ab pariatur ipsum hic libero rerum qui doloribus nobis qui quam sint non culpa inventore et voluptas sequi.");
         ToggleButton togBtn2 = findViewById(R.id.toggleButton2);
 
